@@ -1,0 +1,302 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.allContainer {
+	max-width: 1800px;
+	margin: auto;
+	font-family: consolas;
+}
+
+/*DIAGONAL DIVS*/
+.diagonalBlack {
+	background-color: #1C1C1C;
+	/* Absolute position */
+	left: 0px;
+	position: absolute;
+	margin-top: -75vh;
+	/* Take full size */
+	height: 146%;
+	width: 100%;
+	/* Create diagonal sides */
+	transform: skewY(-27deg);
+	/* Displayed under the main content */
+	z-index: -1;
+}
+
+.diagonalMg {
+	background-color: #AE8FDB;
+	/* Absolute position */
+	position: absolute;
+	top: 130vh;
+	left: 0px;
+	/* Take full size */
+	height: 60%;
+	width: 100%;
+	/* Create diagonal sides */
+	transform: skewY(-27deg);
+	/* Displayed under the main content */
+	z-index: -1;
+}
+
+.diagonalMod {
+	margin-top: 189vh;
+}
+
+.navBar {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding-top: 5vh;
+}
+
+.navBar__logo {
+	margin-left: 2vw;
+	margin-right: auto;
+	color: #AE8FDB;
+	font-size: 70px;
+}
+
+.navBar__links {
+	position: relative;
+	top: 5vh;
+	margin-right: 15vw;
+}
+
+.navBar__links li {
+	display: inline-block;
+	background-color: #AE8FDB;
+	list-style-type: none;
+	padding: 10px 5px;
+	margin-right: 3vw;
+	font-size: 1.1rem;
+	font-weight: bold;
+	letter-spacing: 3px;
+
+	outline: 0;
+	border: 1px solid #93C572;
+	cursor: pointer;
+	position: relative;
+	background-color: rgba(0, 0, 0, 0);
+	z-index: 0;
+}
+
+.navBar__links li::after {
+  content: "";
+  position: absolute;
+
+  background-color: #AE8FDB;
+  width: 100%;
+  height: 100%;
+  top: 5px;
+  left: 5px;
+
+  transition: 0.2s;
+  z-index: -1;
+}
+
+.navBar__links li:hover::after {
+  top: 0px;
+  left: 0px;
+}
+
+.main {
+	display: flex;
+	flex-direction: row;
+	
+	margin-top: 10vh;
+	padding-left: 16vw;
+	height: 80vh;
+
+	font-size: 4.6rem;
+}
+
+.main__name {
+	letter-spacing: 6px;
+	color: #93C572;
+}
+
+.main__description {
+	font-size: 2.8rem;
+	color: #93C572;
+}
+
+.main__brief p {
+	margin-top: 3vh;
+	max-width: 35vw;
+
+	font-family: signika;
+	font-weight: lighter;
+	color: #AE8FDB;
+	font-size: 1.2rem;
+	letter-spacing: 3px;
+	line-height: 1.6;
+}
+
+.profilePic {
+	position: relative;
+	top: 15vh;
+	right: 5vw;
+
+	height: 60%;
+}
+
+.profilePic img {
+	height: 100%;
+}
+
+/*.profilePic::after {
+	content: "";
+	position: absolute;
+	background-color: #AE8FDB;
+
+	height: 100%;
+	width: 100%;
+	top: -30px;
+	left: -30px;
+
+	z-index: -1;
+}*/
+
+.floatingBar {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+
+	position: fixed;
+	bottom: 7vh;
+	margin-left: 2vw;
+	
+	background-color: #FFFFFF;
+	height: 230px;
+	width: 50px;
+	border-radius: 25px;
+}
+
+.floatingBar img {
+	color: #1C1C1C;
+	width: 80%;
+}
+
+.aboutMeContainer {
+	position: relative;
+	left: 45vw;
+
+	width: 40vw;
+}
+
+.aboutMe__title {
+	font-size: 2rem;
+	font-weight: bold;
+
+	margin: 0.5rem 2rem;
+}
+
+.aboutMe__descriptionContainer {
+	background-color: #AE8FDB;
+
+	width: 40vw;
+	padding: 6%;
+}
+
+.aboutMe__description {
+	color: #AE8FDB;
+	letter-spacing: 2px;
+	line-height: 30px;
+
+	padding: 6%;
+	margin: auto;
+
+	background-color: #1C1C1C;
+}
+
+.skillsContainer {
+	width: 1100px;
+	height: 650px;
+	margin: auto;
+	margin-top: 25vh;
+}
+
+.skills__title {
+	font-size: 2rem;
+	font-weight: bold;
+	color: #93C572;
+	text-align: right;
+
+	margin-bottom: 3%;
+}
+
+.skills__buttonsContainer {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	height: 90%;
+
+	margin: auto;
+}
+
+.skills__buttonContainer {
+/*	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;*/
+
+	margin: 0 5%;
+
+	width: 17%;
+	height: 50%;
+}
+
+.skills__buttonDiv {
+	width: 100%;
+	height: 70%;
+
+	background-color: #1C1C1C;
+	border-radius: 60px;
+}
+
+.button__BG {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 70% 70%;
+}
+
+.skills__buttonContainer p {
+	font-size: 1.5rem;
+	text-align: center;
+	color: #93C572;
+	letter-spacing: 2px;
+
+	margin-top: 5%;
+}
+
+.button1 {
+	background-image: url("../icons/logoCSS.svg");
+}
+.button2 {
+	background-image: url("../icons/Styled.svg");
+}
+.button3 {
+	background-image: url("../icons/HTML5.svg");
+}
+.button4 {
+	background-image: url("../icons/GITHUB.svg");
+}
+.button5 {
+	background-image: url("../icons/logoCSS.svg");
+}
+.button6 {
+	background-image: url("../icons/logoCSS.svg");
+}
+
+
+
+
+.footerContainer {
+	color:  red;
+	height: 90px;
+}

@@ -1,0 +1,4 @@
+black : #1C1C1C
+violet : #AE8FDB
+green : #93C572
+

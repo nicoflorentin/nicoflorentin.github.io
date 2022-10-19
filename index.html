@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./styles/styles.css">
+	<title>Nicolás - a Front End Developer</title>
+</head>
+<body id="body" class="allContainer">
+
+	<div class="diagonalBlack"></div>
+	<div class="diagonalMg"></div>
+	<div class="diagonalBlack diagonalMod"></div>
+
+	<div class="navBar">
+		<div class="navBar__logo">|NF|</div>
+		<ul class="navBar__links">
+			<li>&lt;AboutMe /&gt;</li>
+			<li>&lt;Skills /&gt;</li>
+			<li>&lt;Contact /&gt;</li>
+		</ul>	
+	</div>
+	<div class="main">
+		<div>
+			<div id="mainName" class="main__name">Nicolás Florentín</div>
+			<div class="main__description">front-end</div>
+			<div class="main__brief">
+				<p>a Front-end developer in training living in Buenos Aires, Argentina. Currently specializing in React Js and <br> aiming to become full stack</p>
+			</div>
+		</div>
+		<div class="profilePic">
+			<img src="./img/profile_pic.png" alt="profile_pic">
+		</div>
+	</div>
+
+	<div class="aboutMeContainer">
+		<div class="aboutMe__title">&lt;AboutMe /&gt;</div>
+		<div class="aboutMe__descriptionContainer">
+			<div class="aboutMe__description">
+				<p>&lt;p&gt;<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis blanditiis, asperiores reiciendis sint ad, aliquam dolores cumque quae dicta, harum dignissimos facere eum? Nesciunt, commodi, et. Debitis aspernatur aliquid, ab.<br> &lt;/p&gt;</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="skillsContainer">
+		<div class="skills__title">&lt;Skills /&gt;</div>
+		<div class="skills__buttonsContainer">
+
+			<div class="skills__buttonContainer">
+				<div class="skills__buttonDiv button1 button__BG"></div>
+				<p>Title</p>
+			</div>
+			<div class="skills__buttonContainer">
+				<div class="skills__buttonDiv button2 button__BG"></div>
+				<p>Title</p>
+			</div>
+			<div class="skills__buttonContainer">
+				<div class="skills__buttonDiv button3 button__BG"></div>
+				<p>Title</p>
+			</div>
+			<div class="skills__buttonContainer">
+				<div class="skills__buttonDiv button4 button__BG"></div>
+				<p>Title</p>
+			</div>
+			<div class="skills__buttonContainer">
+				<div class="skills__buttonDiv button5 button__BG"></div>
+				<p>Title</p>
+			</div>
+			<div class="skills__buttonContainer">
+				<div class="skills__buttonDiv button6 button__BG"></div>
+				<p>Title</p>
+			</div>
+		</div>
+	</div>
+
+	<aside class="floatingBar">
+		<img src="./icons/mail-100.svg" alt="mailIcon">
+		<img src="./icons/linkedin-100.svg" alt="linkedinIcon">
+		<img src="./icons/github-100.svg" alt="githubIcon">
+	</aside>
+
+	<div id="PageDescription" class="footerContainer">
+		Page Description
+	</div>
+</body>
+
+<script>
+
+	let myElem = document.getElementById("PageDescription")
+	// div top position extractor
+	function getTopPos(el) {
+	    for (var topPos = 0;
+	        el != null;
+	        topPos += el.offsetTop, el = el.offsetParent);
+	    return topPos;
+	}
+
+	// let myDivPosition = getTopPos(myElem)
+
+	// window.addEventListener("scroll", () => {
+	//   let scrollValue = this.scrollY;
+	//   if (scrollValue + 800 > myDivPosition) {
+	//   	window.scroll(0, myDivPosition -1080)
+	//   }
+	// });
+
+</script>
+</html>
