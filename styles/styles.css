@@ -6,9 +6,17 @@
 }
 
 .allContainer {
-	max-width: 1800px;
+	/* max-width: 1920px; */
 	margin: auto;
 	font-family: consolas;
+}
+
+.bg-black {
+	position: absolute;
+	background: url('../background/black.svg');
+	height: 1158px;
+	width: 1920px;
+	z-index: -1;
 }
 
 .navBar {
@@ -41,7 +49,7 @@
 	font-weight: bold;
 	letter-spacing: 3px;
 
-	outline: 0;
+	/* outline: 0; */
 	border: 1px solid #93C572;
 	cursor: pointer;
 	position: relative;
