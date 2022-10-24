@@ -11,41 +11,6 @@
 	font-family: consolas;
 }
 
-/*DIAGONAL DIVS*/
-.diagonalBlack {
-	background-color: #1C1C1C;
-	/* Absolute position */
-	left: 0px;
-	position: absolute;
-	margin-top: -75vh;
-	/* Take full size */
-	height: 146%;
-	width: 100%;
-	/* Create diagonal sides */
-	transform: skewY(-27deg);
-	/* Displayed under the main content */
-	z-index: -1;
-}
-
-.diagonalMg {
-	background-color: #AE8FDB;
-	/* Absolute position */
-	position: absolute;
-	top: 130vh;
-	left: 0px;
-	/* Take full size */
-	height: 60%;
-	width: 100%;
-	/* Create diagonal sides */
-	transform: skewY(-27deg);
-	/* Displayed under the main content */
-	z-index: -1;
-}
-
-.diagonalMod {
-	margin-top: 189vh;
-}
-
 .navBar {
 	display: flex;
 	justify-content: flex-end;
