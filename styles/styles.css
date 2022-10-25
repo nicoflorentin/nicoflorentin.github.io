@@ -48,10 +48,11 @@
 }
 
 .navBar__logo {
-	margin-left: 2vw;
+	margin-left: 5vw;
 	margin-right: auto;
+	font-weight: 100;
 	color: #AE8FDB;
-	font-size: 70px;
+	font-size: 50px;
 }
 
 .navBar__links {
@@ -111,7 +112,7 @@
 	display: flex;
 	flex-direction: row;
 	
-	margin-top: 10vh;
+	margin-top: 15vh;
 	padding-left: 16vw;
 	height: 80vh;
 
@@ -124,7 +125,7 @@
 }
 
 .main__description {
-	font-size: 2.8rem;
+	font-size: 2rem;
 	color: #93C572;
 }
 
