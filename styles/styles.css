@@ -1,8 +1,9 @@
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
+  /* border: 1px solid red */
 }
 
 .allContainer {
@@ -37,7 +38,6 @@
   	background-attachment: scroll;
 }
 
-
 /* NAVBAR */
 
 .navBar {
@@ -52,7 +52,7 @@
 	margin-right: auto;
 	font-weight: 100;
 	color: #AE8FDB;
-	font-size: 50px;
+	font-size: 30px;
 }
 
 .navBar__links {
@@ -80,13 +80,6 @@
 	transition: 0.2s;
 }
 
-/* agrandar bordes en hover (se rompe) */
-
-/* .navBar__links li:hover {
-	border: 2px solid #93C572;
-	transition-delay: 0.1s;
-} */
-
 .navBar__links li::after {
   content: "";
   position: absolute;
@@ -96,14 +89,17 @@
   height: 100%;
   top: 5px;
   left: 5px;
+  
 
   transition: 0.2s;
   z-index: -1;
 }
 
 .navBar__links li:hover::after {
-  top: 0px;
-  left: 0px;
+  top: 2px;
+  left: 2px;
+
+  
 }
 
 /* MAIN */
@@ -113,8 +109,8 @@
 	flex-direction: row;
 	
 	margin-top: 15vh;
+	margin-bottom: 29vh;
 	padding-left: 16vw;
-	height: 80vh;
 
 	font-size: 4.6rem;
 }
@@ -146,25 +142,26 @@
 	top: 15vh;
 	right: 5vw;
 
-	height: 60%;
+	height: 400px;
 }
 
 .profilePic img {
 	height: 100%;
 }
 
-/*.profilePic::after {
+.profilePic::after {
 	content: "";
 	position: absolute;
 	background-color: #AE8FDB;
+	
 
 	height: 100%;
 	width: 100%;
-	top: -30px;
-	left: -30px;
+	top: -20px;
+	left: -20px;
 
 	z-index: -1;
-}*/
+}
 
 /* FIXED ASIDE BAR */
 
@@ -199,34 +196,30 @@
 
 /* ABOUT ME  */
 
-.aboutMeContainer {
-	position: relative;
-	left: 40vw;
-
-	width: 40vw;
-}
-
 .aboutMe__title {
+	text-align: center;
 	font-size: 2rem;
 	font-weight: bold;
 	text-shadow: 2px 2px rgba(255, 255, 255, 0.8);
 
-	margin: 0.5rem 2rem;
+	margin: 2rem 2rem;
 }
 
 .aboutMe__descriptionContainer {
+	position: relative;
 	background-color: #AE8FDB;
-
-	width: 50vw;
-	padding: 6%;
+	left: 600px;
+	width: 1000px;
+	padding: 40px;
 }
 
 .aboutMe__description {
 	color: #AE8FDB;
 	letter-spacing: 2px;
+	font-size:large;
 	line-height: 30px;
 
-	padding: 6%;
+	padding: 40px;
 	margin: auto;
 
 	background-color: #1C1C1C;
