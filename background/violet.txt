@@ -1,3 +1,0 @@
-<svg width="1920" height="2034" viewBox="0 0 1920 2034" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0 959.5L1920 0.5V1837.51L0 2748.5V959.5Z" fill="#AE8FDB"/>
-</svg>
