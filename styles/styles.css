@@ -15,9 +15,9 @@
 
 .bg-black {
 	position: absolute;
-	background: url('../background/black.svg');
+	background: url('../img/background/black.svg');
 	/* height: 1800px; */
-	height: 3000px;
+	height: 2800px;
 	width: 100%;
 	z-index: -2;
 
@@ -28,7 +28,7 @@
 .bg-violet {
 	position: absolute;
 	top: 800px;
-	background: url('../background/violet.svg');
+	background: url('../img/background/violet.svg');
 	height: 2000px;
 	width: 100%;
 	z-index: -1;
