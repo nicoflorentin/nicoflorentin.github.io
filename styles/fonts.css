@@ -1,0 +1,8 @@
+@font-face {
+    font-family: LocalConsolas;
+    src:url("../fonts/CONSOLA.TTF") ;
+    src:url("/fonts/CONSOLAB.TTF");
+    src:url("/fonts/consolai.ttf");
+    src:url("/fonts/Consolas.ttf");
+    src:url("/fonts/consolaz.ttf");
+}

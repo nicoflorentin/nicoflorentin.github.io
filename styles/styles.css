@@ -1,3 +1,8 @@
+@font-face {
+    font-family: LocalConsolas;
+    src:url("../fonts/CONSOLA.TTF") ;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +12,7 @@
 }
 
 .allContainer {
-	font-family: consolas;
+	font-family: LocalConsolas, consolas ;
 }
 
 /* BACKGROUND  */
@@ -286,7 +291,7 @@
 .box img {
 	width: 45px;
 	height: 45px;
-
+	
 	z-index: 3;
 }
 
@@ -298,14 +303,14 @@
 	width: 100%;
 	top: -7px;
 	left: -7px;
-
+	
 	z-index: -1;
+	transition: 0.2s;
 }
 
 .box:hover::after {
 	top: 7px;
 	left: 7px;
-	transition: 0.2s;
 }
 
 
