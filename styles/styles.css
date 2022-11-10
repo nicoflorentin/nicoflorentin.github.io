@@ -44,7 +44,7 @@
 	background-color: var(--my-violet);
 	list-style-type: none;
 	padding: 5px 7px;
-	margin: 1vh 3vw;
+	margin: 5vh 3vw 3vh 3vw;
 	font-size: var(--font-m);
 	font-weight: bold;
 	border: 1px solid var(--my-green);
@@ -75,9 +75,6 @@
 }
 
 /* MAIN */
-.main, .main__name, .profilePic {
-    margin-top: 3vh;
-}
 
 .main {
 	width: 80vw;
@@ -90,11 +87,13 @@ h1 {
     font-weight: normal;
 	letter-spacing: 2px;
 	color: var(--my-green);
+	margin-top: 10vh;
 }
 
 .main__description {
-	font-size: var(--font-m);
+	font-size: var(--font-l);
 	color: var(--my-green);
+	margin-top: 3px;
 }
 
 .main__body {
@@ -109,12 +108,15 @@ h1 {
 	font-size: var(--font-m);
 	letter-spacing: 1px;
 	line-height: 12.5px;
+	margin-right: 5%;
 }
 
 .main__profilePic img {
 	display: flex;
 	width: 114px;
 	margin: auto;
+	position: relative;
+	top: 10px;
 }
 
 .profilePic {
@@ -287,10 +289,11 @@ h1 {
 .bg-black {
 	position: absolute;
 	background: url("../img/background/black-mobile.svg");
-	height: 704px;
+	height: 720px;
 	width: 100%;
 	z-index: -5;
 
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
@@ -319,8 +322,11 @@ h1 {
 }
 
 header {
+	width: 100%;
 	color: white;
-	font-size: 8px;
+	font-size: var(--font-s);
 	text-align: center;
 	background-color: darkred;	
+	position: fixed;
+
 }
