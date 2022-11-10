@@ -20,14 +20,12 @@
     --my-black: #1C1C1C;
     --my-violet: #AE8FDB;
     --my-green: #93C572;
-    
-    
 }
 
 /* NAVBAR */
 
 .navBar {
-	padding-top: 1vh;
+	padding-top: 5px;
 }
 
 .navBar__logo {
@@ -44,7 +42,7 @@
 	background-color: var(--my-violet);
 	list-style-type: none;
 	padding: 5px 7px;
-	margin: 3vh 3vw;
+	margin: 22px 3vw;
 	font-size: var(--font-m);
 	font-weight: bold;
 	border: 1px solid var(--my-green);
@@ -70,8 +68,8 @@
 }
 
 .navBar__links li:hover::after {
-	top: -2px;
-	left: -2px;
+	top: 1px;
+	left: 1px;
 }
 
 /* MAIN */
@@ -87,7 +85,7 @@ h1 {
     font-weight: normal;
 	letter-spacing: 2px;
 	color: var(--my-green);
-	margin-top: 2vh;
+	margin-top: 16px;
 }
 
 .main__description {
@@ -102,13 +100,12 @@ h1 {
 }
 
 .main__brief p {
-	font-family: signika;
 	font-weight: lighter;
 	color: var(--my-violet);
 	font-size: var(--font-m);
 	letter-spacing: 1px;
 	line-height: 12.5px;
-	margin-right: 5px;
+	margin-right: 10px;
 }
 
 .main__profilePic img {
@@ -157,11 +154,7 @@ h1 {
 	font-size: var(--font-l);
 	color: var(--my-green);
 	font-weight: bold;
-	margin-top: 15vh;
-}
-
-.aboutMeSection {
-	margin-top: 2vh;
+	margin-top: 65px;
 }
 
 .aboutMe__img {
@@ -202,7 +195,7 @@ h1 {
 	align-items: center;
 	justify-content: space-evenly;
 
-	margin-top: 5vh;
+	margin-top: 70px;
 }
 
 .skills__img {
@@ -226,7 +219,7 @@ h1 {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-around;
-	margin: 2vh auto;
+	margin: 16px auto;
 	max-width: 215px;
 }
 
@@ -278,10 +271,10 @@ h1 {
 }
 
 .footerContainer p {
-    margin: 5vh 0 1vh 0;
     text-align: center;
 	font-size: var(--font-xs);
 	color: var(--my-black);
+	margin-top: 20px;
 }
 
 /* BACKGROUND  */
@@ -301,7 +294,7 @@ h1 {
 .bg-violet {
 	position: absolute;
 	background: url("../img/background/violet-mobile.svg");
-	height: 500px;
+	height: 550px;
 	width: 100%;
 	z-index: -5;
 
