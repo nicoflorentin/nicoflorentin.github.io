@@ -3,10 +3,12 @@
     src:url("../fonts/CONSOLA.TTF") ;
     font-weight: normal ;
     font-style: normal;
+    font-display: block;
 }
 @font-face {
     font-family: LocalConsolas;
     src:url("/fonts/CONSOLAB.TTF");
     font-weight: bold;
     font-style: normal;
+    font-display: block;
 }

@@ -1,0 +1,309 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  /*border: 1px solid red;*/
+}
+
+.allContainer {
+	font-family: LocalConsolas;
+}
+
+/* BACKGROUND  */
+
+.bg-black {
+	position: absolute;
+	background: url('../img/background/black.svg');
+	height: 3000px;
+	width: 100%;
+	z-index: -5;
+
+	background-repeat: no-repeat;
+  	background-attachment: fixed;
+}
+
+.bg-violet {
+	position: absolute;
+	background: url('../img/background/violet.svg');
+	height: 2000px;
+	width: 100%;
+	z-index: -5;
+	
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+}
+
+.violet-1 {
+	top: 650px;
+}
+
+.violet-2 {
+	top: 2000px;
+	height: 1000px;
+}
+
+/* NAVBAR */
+
+.navBar {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding-top: 5vh;
+}
+
+.navBar__logo {
+	max-width: 300px;
+	margin-left: 16vw;
+	margin-right: auto;
+	font-weight: normal;
+	color: #AE8FDB;
+	font-size: 30px;
+}
+
+.navBar__links {
+	position: relative;
+	/* top: 5vh; */
+	margin-right: 15vw;
+}
+
+.navBar__links li {
+	display: inline-block;
+	background-color: #AE8FDB;
+	list-style-type: none;
+	padding: 10px 5px;
+	margin-right: 3vw;
+	font-size: 1.1rem;
+	font-weight: bold;
+	letter-spacing: 3px;
+
+	border: 1px solid #93C572;
+	cursor: pointer;
+	position: relative;
+	background-color: rgba(0, 0, 0, 0);
+	z-index: 0;
+	transition: 0.2s;
+}
+
+.navBar__links li::after {
+  content: "";
+  position: absolute;
+
+  background-color: #AE8FDB;
+  width: 100%;
+  height: 100%;
+  top: 5px;
+  left: 5px;
+  
+
+  transition: 0.2s;
+  z-index: -1;
+}
+
+.navBar__links li:hover::after {
+  top: 2px;
+  left: 2px;
+
+  
+}
+
+/* MAIN */
+
+.main {
+	display: inline-flex;
+	flex-direction: row;
+	
+	margin-top: 15vh;
+	margin-bottom: 23vh;
+	margin-left: 16vw;
+
+	font-size: 4.6rem;
+}
+
+.main__name {
+	letter-spacing: 6px;
+	color: #93C572;
+}
+
+.main__description {
+	font-size: 2rem;
+	color: #93C572;
+}
+
+.main__brief p {
+	margin-top: 3vh;
+	max-width: 35vw;
+
+	font-family: signika;
+	font-weight: lighter;
+	color: #AE8FDB;
+	font-size: 1.2rem;
+	letter-spacing: 3px;
+	line-height: 1.6;
+}
+
+.profilePic {
+	position: relative;
+	top: 15vh;
+	right: 5vw;
+
+	height: 400px;
+}
+
+.profilePic img {
+	height: 400px;
+}
+
+.profilePic::after {
+	content: "";
+	position: absolute;
+	background-color: #AE8FDB;
+	
+
+	height: 100%;
+	width: 100%;
+	top: -20px;
+	left: -20px;
+
+	z-index: -1;
+}
+
+/* FIXED ASIDE BAR */
+
+.floatingBar {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	height: 230px;
+	width: 50px;
+	bottom: 7vh;
+	margin-left: 5vw;
+
+	position: fixed;
+	background-color: #FFFFFF;
+	border-radius: 25px;
+}
+
+.floatingBar img {
+	color: #1C1C1C;
+	width: 40px;
+}
+
+/* ABOUT ME  */
+
+.title {
+	text-align: center;
+	font-size: 2rem;
+	color: #93C572;
+	font-weight: bold;
+	margin: 2rem 2rem;
+}
+
+.aboutMeSection {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.aboutMe__img {
+	height: 300px;
+}
+
+.aboutMe__descriptionContainer {
+	background-color: #AE8FDB;
+	max-width: 1000px;
+	padding: 40px;
+}
+
+.aboutMe__description {
+	color: #AE8FDB;
+	letter-spacing: 2px;
+	font-size:large;
+	line-height: 30px;
+
+	padding: 40px;
+
+	background-color: #1C1C1C;
+}
+
+/* SKILLS */
+
+.skillsSection {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+
+	margin-top: 200px;
+}
+
+.skillsContainer {
+	border: 20px solid #AE8FDB;
+	width: 700px;
+	background-color: #1C1C1C;
+}
+
+.skills__title {
+	text-align: center
+}
+
+.skills__boxContainer {
+	width: 80%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	margin: 10px auto;
+}
+
+.box {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+
+	position: relative;
+	width:219px;
+	height: 79px;
+	margin-bottom: 50px;
+	padding: 0 20px;
+	background-color: #93C572;
+	color: #AE8FDB;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+
+	z-index: 3;
+
+}
+
+.box p {
+	z-index: 3;
+}
+
+.box img {
+	width: 45px;
+	height: 45px;
+	
+	z-index: 3;
+}
+
+.box::after {
+	content: "";
+	position: absolute;
+	background-color: #1C1C1C;
+	height: 100%;
+	width: 100%;
+	top: -7px;
+	left: -7px;
+	
+	z-index: -1;
+	transition: 0.2s;
+}
+
+.box:hover::after {
+	top: 7px;
+	left: 7px;
+}
+
+
