@@ -14,7 +14,8 @@
     --font-xl: 4rem;
     --font-l: 3rem;
     --font-m: 2.3rem;
-    --font-s: 1.7rem;
+    --font-s: 1.5rem;
+	--font-xs: 1.3rem;
     
     --my-black: #1C1C1C;
     --my-violet: #AE8FDB;
@@ -26,7 +27,7 @@
 /* NAVBAR */
 
 .navBar {
-	padding-top: 2vh;
+	padding-top: 1vh;
 }
 
 .navBar__logo {
@@ -34,7 +35,6 @@
 }
 
 .navBar__links {
-    margin-top: 3vh;
 	display: flex;
 	justify-content: center;
 }
@@ -45,7 +45,7 @@
 	list-style-type: none;
 	padding: 10px 10px;
 	margin: 1vh 3vw;
-	font-size: var(--font-m);
+	font-size: var(--font-s);
 	font-weight: bold;
 	border: 1px solid var(--my-green);
 	cursor: pointer;
@@ -94,6 +94,7 @@ h1 {
 
 .main__description {
 	font-size: var(--font-m);
+	font-weight: normal;
 	color: var(--my-green);
 	text-align: center;
 }
@@ -128,12 +129,12 @@ h1 {
 	align-items: center;
 
 	position: fixed;
-	bottom: 5vh;
+	bottom: 2vh;
 	margin-left: 2vw;
 
 	background-color: white;
-	height: 170px;
-	width: 40px;
+	height: 130px;
+	width: 30px;
 	border-radius: 20px;
 }
 
@@ -144,7 +145,7 @@ h1 {
 
 .floatingBar img {
 	color: var(--my-black);
-	width: 30px;
+	width: 25px;
 }
 
 /* ABOUT ME  */
@@ -170,13 +171,13 @@ h1 {
     margin: auto;
 	background-color: var(--my-violet);
 	width: 80vw;
-	padding: 40px;
+	padding: 20px;
 }
 
 .aboutMe__description {
 	color: var(--my-violet);
 	letter-spacing: 2px;
-	font-size: large;
+	font-size: var(--font-s);
 	line-height: 30px;
 
 	padding: 40px;
@@ -211,11 +212,11 @@ h1 {
 }
 
 .skills__boxContainer {
-	width: 80%;
+	width: 90%;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-around;
-	margin: 3vh auto;
+	margin: 2vh auto;
 }
 
 .box {
@@ -224,13 +225,13 @@ h1 {
 	align-items: center;
 
 	position: relative;
-	width: 180px;
-	height: 79px;
-	margin-bottom: 50px;
-	padding: 0 20px;
+	width: 110px;
+	height: 50px;
+	margin: 10px 5px;
+	/* padding: 0 10px; */
 	background-color: var(--my-green);
 	color: var(--my-violet);
-	font-size: var(--font-s);
+	font-size: var(--font-xs);
 	font-weight: bold;
 	text-align: center;
 
@@ -242,8 +243,8 @@ h1 {
 }
 
 .box img {
-	width: 45px;
-	height: 45px;
+	width: 20px;
+	height: 20px;
 
 	z-index: 3;
 }
