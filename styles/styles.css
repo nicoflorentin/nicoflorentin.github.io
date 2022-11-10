@@ -11,11 +11,11 @@
 
 .allContainer {
     font-family: LocalConsolas;
-    --font-xl: 4rem;
-    --font-l: 3rem;
-    --font-m: 2.3rem;
-    --font-s: 1.5rem;
-	--font-xs: 1.3rem;
+    --font-xl: 2rem;
+    --font-l: 1.3rem;
+    --font-m: .9rem;
+    --font-s: .7rem;
+	--font-xs: .5rem;
     
     --my-black: #1C1C1C;
     --my-violet: #AE8FDB;
@@ -43,9 +43,9 @@
 	display: inline-block;
 	background-color: var(--my-violet);
 	list-style-type: none;
-	padding: 10px 10px;
+	padding: 5px 7px;
 	margin: 1vh 3vw;
-	font-size: var(--font-s);
+	font-size: var(--font-m);
 	font-weight: bold;
 	border: 1px solid var(--my-green);
 	cursor: pointer;
@@ -62,57 +62,58 @@
 	background-color: var(--my-violet);
 	width: 100%;
 	height: 100%;
-	top: 10px;
-	left: 10px;
+	top: 3px;
+	left: 3px;
 
 	transition: 0.2s;
 	z-index: -1;
 }
 
 .navBar__links li:hover::after {
-	top: 4px;
-	left: 4px;
+	top: -2px;
+	left: -2px;
 }
 
 /* MAIN */
-.main, .main__name, .main__brief, .profilePic {
-    margin-top: 1.5vh;
+.main, .main__name, .profilePic {
+    margin-top: 3vh;
 }
 
 .main {
-	width: 90vw;
+	width: 80vw;
+	max-width: 340px;
 	margin: auto;
 }
 
 h1 {
     font-size: var(--font-xl);
     font-weight: normal;
-	letter-spacing: 6px;
+	letter-spacing: 2px;
 	color: var(--my-green);
-	text-align: center;
 }
 
 .main__description {
 	font-size: var(--font-m);
-	font-weight: normal;
 	color: var(--my-green);
-	text-align: center;
+}
+
+.main__body {
+	display: flex;
+	align-items: center;
 }
 
 .main__brief p {
 	font-family: signika;
 	font-weight: lighter;
 	color: var(--my-violet);
-	text-align: center;
-	font-size: var(--font-s);
-	letter-spacing: 3px;
-	line-height: 1.6;
-    padding: 0 10vw;
+	font-size: var(--font-m);
+	letter-spacing: 1px;
+	line-height: 12.5px;
 }
 
-.profilePic img {
+.main__profilePic img {
 	display: flex;
-	width: 300px;
+	width: 114px;
 	margin: auto;
 }
 
@@ -133,8 +134,8 @@ h1 {
 	margin-left: 2vw;
 
 	background-color: white;
-	height: 130px;
-	width: 30px;
+	height: 55px;
+	width: 12px;
 	border-radius: 20px;
 }
 
@@ -145,7 +146,7 @@ h1 {
 
 .floatingBar img {
 	color: var(--my-black);
-	width: 25px;
+	width: 10px;
 }
 
 /* ABOUT ME  */
@@ -155,7 +156,7 @@ h1 {
 	font-size: var(--font-l);
 	color: var(--my-green);
 	font-weight: bold;
-	margin-top: 2vh;
+	margin-top: 15vh;
 }
 
 .aboutMeSection {
@@ -171,18 +172,25 @@ h1 {
     margin: auto;
 	background-color: var(--my-violet);
 	width: 80vw;
-	padding: 20px;
+	max-width: 340px;
+	padding: 10px;
 }
 
 .aboutMe__description {
 	color: var(--my-violet);
-	letter-spacing: 2px;
 	font-size: var(--font-s);
-	line-height: 30px;
+	line-height: 10px;
+	letter-spacing: .08em;
+	padding: 10px;
 
-	padding: 40px;
+	display: flex;
+	justify-content: center;
 
 	background-color: var(--my-black);
+}
+
+.aboutMe__description p {
+	max-width: 216px;
 }
 
 /* SKILLS */
@@ -201,14 +209,15 @@ h1 {
 }
 
 .skillsContainer {
-	border: 20px solid var(--my-violet);
+	border: 10px solid var(--my-violet);
 	width: 80vw;
-    max-width: 700px;
+	max-width: 340px;
 	background-color: var(--my-black);
 }
 
 .skills__title {
 	text-align: center;
+	margin-top: 10%;
 }
 
 .skills__boxContainer {
@@ -225,13 +234,12 @@ h1 {
 	align-items: center;
 
 	position: relative;
-	width: 110px;
-	height: 50px;
+	width: 72px;
+	height: 26px;
 	margin: 10px 5px;
-	/* padding: 0 10px; */
 	background-color: var(--my-green);
 	color: var(--my-violet);
-	font-size: var(--font-xs);
+	font-size: var(--font-s);
 	font-weight: bold;
 	text-align: center;
 
@@ -243,8 +251,8 @@ h1 {
 }
 
 .box img {
-	width: 20px;
-	height: 20px;
+	width: 15px;
+	height: 15px;
 
 	z-index: 3;
 }
@@ -255,8 +263,8 @@ h1 {
 	background-color: var(--my-black);
 	height: 100%;
 	width: 100%;
-	top: -7px;
-	left: -7px;
+	top: -3px;
+	left: -3px;
 
 	z-index: -1;
 	transition: 0.2s;
@@ -270,14 +278,16 @@ h1 {
 .footerContainer p {
     margin: 5vh 0 2vh 0;
     text-align: center;
+	font-size: var(--font-s);
+	color: var(--my-green);
 }
 
 /* BACKGROUND  */
 
 .bg-black {
 	position: absolute;
-	background: url("../img/background/black.svg");
-	height: 2700px;
+	background: url("../img/background/black-mobile.svg");
+	height: 704px;
 	width: 100%;
 	z-index: -5;
 
@@ -294,6 +304,8 @@ h1 {
 
 	background-repeat: no-repeat;
 	background-attachment: scroll;
+
+	display: none;
 }
 
 .violet-1 {
@@ -304,4 +316,11 @@ h1 {
 	top: 2000px;
 	height: 1000px;
     display:none;
+}
+
+header {
+	color: white;
+	font-size: 8px;
+	text-align: center;
+	background-color: darkred;	
 }
