@@ -327,6 +327,6 @@ header {
 	text-align: center;
 	background-color: darkred;	
 	position: fixed;
-	z-index: 2;
+	z-index: 10;
 
 }
