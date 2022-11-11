@@ -76,7 +76,7 @@
 
 .main {
 	width: 80vw;
-	max-width: 340px;
+	max-width: 300px;
 	margin: auto;
 }
 
@@ -103,7 +103,7 @@ h1 {
 	font-weight: lighter;
 	color: var(--my-violet);
 	font-size: var(--font-m);
-	letter-spacing: 1px;
+	letter-spacing: 0.5px;
 	line-height: 12.5px;
 	margin-right: 10px;
 }
@@ -132,8 +132,8 @@ h1 {
 	margin-left: 2vw;
 
 	background-color: white;
-	height: 55px;
-	width: 12px;
+	height: 100px;
+	width: 25px;
 	border-radius: 20px;
 }
 
@@ -144,7 +144,7 @@ h1 {
 
 .floatingBar img {
 	color: var(--my-black);
-	width: 10px;
+	width: 20px;
 }
 
 /* ABOUT ME  */
@@ -154,7 +154,7 @@ h1 {
 	font-size: var(--font-l);
 	color: var(--my-green);
 	font-weight: bold;
-	margin-top: 65px;
+	margin-top: 100px;
 }
 
 .aboutMe__img {
@@ -166,14 +166,14 @@ h1 {
     margin: auto;
 	background-color: var(--my-violet);
 	width: 80vw;
-	max-width: 340px;
+	max-width: 300px;
 	padding: 10px;
 }
 
 .aboutMe__description {
 	color: var(--my-violet);
-	font-size: var(--font-s);
-	line-height: 10px;
+	font-size: var(--font-m);
+	line-height: 15px;
 	letter-spacing: .08em;
 	padding: 10px;
 
@@ -194,6 +194,8 @@ h1 {
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-evenly;
+	max-width: 300px;
+	margin: auto;
 
 	margin-top: 70px;
 }
@@ -205,7 +207,6 @@ h1 {
 .skillsContainer {
 	border: 10px solid var(--my-violet);
 	width: 80vw;
-	max-width: 340px;
 	background-color: var(--my-black);
 }
 
@@ -225,7 +226,7 @@ h1 {
 
 .box {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: center;
 	align-items: center;
 
 	position: relative;
@@ -236,7 +237,6 @@ h1 {
 	color: var(--my-violet);
 	font-size: var(--font-m);
 	font-weight: normal;
-	text-align: center;
 
 	z-index: 3;
 }
@@ -248,6 +248,7 @@ h1 {
 .box img {
 	width: 20px;
 	height: 20px;
+	margin-right: 5px;
 
 	z-index: 3;
 }
@@ -282,7 +283,7 @@ h1 {
 .bg-black {
 	position: absolute;
 	background: url("../img/background/black-mobile.svg");
-	height: 500px;
+	height: 700px;
 	width: 100%;
 	z-index: -5;
 	margin: auto;
@@ -294,17 +295,18 @@ h1 {
 .bg-violet {
 	position: absolute;
 	background: url("../img/background/violet-mobile.svg");
-	height: 400px;
+	height: 600px;
 	width: 100%;
 	z-index: -5;
 
 	background-repeat: no-repeat;
 	background-attachment: scroll;
+	background-size: cover;
 
 }
 
 .violet-1 {
-	top: 250px;
+	top: 100px;
 }
 
 .violet-2 {
