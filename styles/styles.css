@@ -176,6 +176,7 @@ h1 {
 	line-height: 15px;
 	letter-spacing: .08em;
 	padding: 10px;
+	font-weight: bold;
 
 	display: flex;
 	justify-content: center;
@@ -221,7 +222,6 @@ h1 {
 	flex-flow: row wrap;
 	justify-content: space-around;
 	margin: 16px auto;
-	max-width: 215px;
 }
 
 .box {
@@ -230,7 +230,7 @@ h1 {
 	align-items: center;
 
 	position: relative;
-	width: 90px;
+	width: 95px;
 	height: 40px;
 	margin: 10px 5px;
 	background-color: var(--my-green);
