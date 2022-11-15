@@ -1,108 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" type="text/css" href="./styles/fonts.css">
-		<link rel="stylesheet" type="text/css" href="./styles/styles.css">
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="./styles/fonts.css" />
+		<link rel="stylesheet" type="text/css" href="./styles/styles.css" />
+		<link rel="stylesheet" type="text/css" href="./styles/stylesTablet.css" />
+		<link rel="stylesheet" type="text/css" href="./styles/stylesLaptop-s-l.css" />
 		<title>Nicolás - a Front End Developer</title>
 	</head>
 	<body id="body" class="allContainer">
-		
 		<div class="bg-black"></div>
 		<div class="bg-violet violet-1"></div>
 		<div class="bg-violet violet-2"></div>
-
 		<header>🤓 - This site is in development - 🤓</header>
-		<div class="navBar">
-			<h1 class="navBar__logo">
-				<span
-				   class="txt-rotate"
-				   data-period="1000"
-				   data-rotate='["Hi!", "Hola!", "Hallo!", "Bonjour!", "Guten tag!", "Olá!", "Ciao!" ]'>
-				</span>
-			</h1>
-			<ul class="navBar__links">
-				<li>&lt;AboutMe /&gt;</li>
-				<li>&lt;Skills /&gt;</li>
-				<li>&lt;Projects /&gt;</li>
-			</ul>	
-		</div>
-		<section class="main">
-			<h1 class="main__name">Nicolás Florentín</h1>
-			<div class="main__description">front-end-dev</div>
-			<div class="main__body">
-				<div class="main__brief">
-					<p>a Front-end developer in training living in Buenos Aires, Argentina. Currently specializing in React Js and <br> aiming to become full stack</p>
-				</div>
-				<div class="main__profilePic">
-					<img src="./img/profile_pic.png" alt="profile_pic">
-				</div>
-			</div>
-		</section>
-		<h2 class="title">&lt;AboutMe /&gt;</h2>
-		<section class="aboutMeSection">
-			<img class='aboutMe__img' src="./img/me-circle.svg" alt="me-developing">
-			<div class="aboutMeContainer">
-				<div class="aboutMe__descriptionContainer">
-					<div class="aboutMe__description">
-						<p>&lt;p&gt;<br>
-							A web developer specialized in Front-End 🎨💻, I use Figma to digitalize my projects and then writing the required code so it is perfectly interpreted by the browser 🧠🚀.
-							I'm also very passionate about CSS and all the potential it offers when works with JS together 💪
-						<br>&lt;/p&gt;</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="skillsSection">
-			<div class="skillsContainer">
-				<h2 class="skills__title title">&lt;Skills /&gt;</h2>
-				<div class="skills__boxContainer">
-					<div class="box">
-						<img src="./icons/react.svg" alt="react">
-						<p>React</p>
-					</div>
-					<div class="box">
-						<img src="./icons/styled-new.svg" alt="styled-components">
-						<p>Styled<br>Components</p>
-					</div>
-					<div class="box">
-						<img src="./icons/HTML5.svg" alt="html">
-						<p>HTML</p>
-					</div>
-					<div class="box">
-						<img src="./icons/github-white.svg" alt="github">
-						<p>GitHub</p>
-					</div>
-					<div class="box">
-						<img src="./icons/CSS.svg" alt="css">
-						<p>CSS</p>
-					</div>
-					<div class="box">
-						<img src="./icons/figma.svg" alt="figma">
-						<p>Figma</p>
-					</div>
-					<div class="box">
-						<img src="./icons/logo-javascript.svg" alt="js">
-						<p>JavaScript</p>
-					</div>
-					<div class="box">
-						<img src="./icons/bootstrap.svg" alt="bootstrap">
-						<p>Bootstrap</p>
-					</div>
-				</div>
-			</div>
-			<img class='skills__img' src="./img/me.svg" alt="me-skills">
-		</section>
-		<aside class="floatingBar">
-			<a href="mailto:nicogrunger@hotmail.com"><img src="./icons/mail-100.svg" alt="mailIcon"></a>
-			<a href="https://www.linkedin.com/in/nicol%C3%A1s-florent%C3%ADn-a3771217a/"><img src="./icons/linkedin-100.svg" alt="linkedinIcon"></a>
-			<a href="https://github.com/nicoflorentin"><img src="./icons/github-100.svg" alt="githubIcon"></a>
-		</aside>
 
-		<div id="PageDescription" class="footerContainer">
-			<p>Nicolás Florentín - Buenos Aires - 2022</p>
+		<div class="container">
+			<div class="navBar">
+				<h1 class="navBar__logo">
+					<span
+						class="txt-rotate"
+						data-period="1000"
+						data-rotate='["Hi!", "Hola!", "Hallo!", "Bonjour!", "Guten tag!", "Olá!", "Ciao!" ]'
+					>
+					</span>
+				</h1>
+				<ul class="navBar__links">
+					<li>&lt;AboutMe /&gt;</li>
+					<li>&lt;Skills /&gt;</li>
+					<li>&lt;Projects /&gt;</li>
+				</ul>
+			</div>
+			<section class="main">
+				<h1 class="main__name">Nicolás Florentín</h1>
+				<div class="main__description">front-end-dev</div>
+				<div class="main__body">
+					<div class="main__brief">
+						<p>
+							a Front-end developer in training living in Buenos
+							Aires, Argentina. Currently specializing in React Js
+							and <br/>
+							aiming to become full stack
+						</p>
+					</div>
+					<div class="main__profilePic">
+						<img src="./img/profile_pic.png" alt="profile_pic" />
+					</div>
+				</div>
+			</section>
+			<h2 class="title">&lt;AboutMe /&gt;</h2>
+			<section class="aboutMeSection">
+				<img
+					class="aboutMe__img"
+					src="./img/me-circle.svg"
+					alt="me-developing"
+				/>
+				<div class="aboutMeContainer">
+					<div class="aboutMe__descriptionContainer">
+						<div class="aboutMe__description">
+							<p>
+								&lt;p&gt;<br />
+								A web developer specialized in Front-End 🎨💻, I
+								use Figma to digitalize my projects and then
+								writing the required code so it is perfectly
+								interpreted by the browser 🧠🚀. I'm also very
+								passionate about CSS and all the potential it
+								offers when works with JS together 💪
+								<br />&lt;/p&gt;
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="skillsSection">
+				<div class="skillsContainer">
+					<h2 class="skills__title title">&lt;Skills /&gt;</h2>
+					<div class="skills__boxContainer">
+						<div class="box">
+							<img src="./icons/react.svg" alt="react" />
+							<p>React</p>
+						</div>
+						<div class="box">
+							<img
+								src="./icons/styled-new.svg"
+								alt="styled-components"
+							/>
+							<p>Styled<br />Components</p>
+						</div>
+						<div class="box">
+							<img src="./icons/HTML5.svg" alt="html" />
+							<p>HTML</p>
+						</div>
+						<div class="box">
+							<img src="./icons/github-white.svg" alt="github" />
+							<p>GitHub</p>
+						</div>
+						<div class="box">
+							<img src="./icons/CSS.svg" alt="css" />
+							<p>CSS</p>
+						</div>
+						<div class="box">
+							<img src="./icons/figma.svg" alt="figma" />
+							<p>Figma</p>
+						</div>
+						<div class="box">
+							<img src="./icons/logo-javascript.svg" alt="js" />
+							<p>JavaScript</p>
+						</div>
+						<div class="box">
+							<img src="./icons/bootstrap.svg" alt="bootstrap" />
+							<p>Bootstrap</p>
+						</div>
+					</div>
+				</div>
+				<img class="skills__img" src="./img/me.svg" alt="me-skills" />
+			</section>
 		</div>
+		<aside class="floatingBar">
+			<a href="mailto:nicogrunger@hotmail.com"
+				><img src="./icons/mail-100.svg" alt="mailIcon"
+			/></a>
+			<a
+				href="https://www.linkedin.com/in/nicol%C3%A1s-florent%C3%ADn-a3771217a/"
+				><img src="./icons/linkedin-100.svg" alt="linkedinIcon"
+			/></a>
+			<a href="https://github.com/nicoflorentin"
+				><img src="./icons/github-100.svg" alt="githubIcon"
+			/></a>
+		</aside>
+		<footer id="PageDescription" class="footerContainer">
+			<p>Nicolás Florentín - Buenos Aires - 2022</p>
+		</footer>
 	</body>
-	<script src="./scripts/text-carr.js" ></script>
+	<script src="./scripts/text-carr.js"></script>
 </html>
