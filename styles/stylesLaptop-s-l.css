@@ -11,7 +11,7 @@
     }
 
     .violet-1 {
-        top: 690px;
+        top: 550px;
         height: 1200px;
     }
 
@@ -29,6 +29,7 @@
     .navBar {
         display: flex;
         justify-content: space-between;
+        margin-right: 10vw;
     }
 
     .navBar__logo {
@@ -100,6 +101,7 @@
     .skills__img {
         display: inherit;
         height: 300px;
+        margin-left: 15vw;
     }
 
     .skills__title {
@@ -134,12 +136,12 @@
     .floatingBar {
         bottom: 4vh;
         margin-left: 2vw;
-        height: 120px;
-        width: 30px;
+        height: 180px;
+        width: 45px;
     }
 
     .floatingBar img {
-        width: 25px;
+        width: 35px;
     }
 
     .footerContainer p {

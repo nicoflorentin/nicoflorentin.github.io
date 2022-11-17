@@ -42,7 +42,7 @@
 	background-color: var(--my-violet);
 	list-style-type: none;
 	padding: 0.5rem 1rem;
-	margin: 5vh 3vw;
+	margin: 5vh 2vw;
 	font-size: var(--font-m);
 	font-weight: bold;
 	border: 1px solid var(--my-green);
@@ -50,7 +50,6 @@
 	position: relative;
 	background-color: var(--my-black);
 	z-index: 0;
-	transition: 0.2s;
 }
 
 .navBar__links li::after {
@@ -63,7 +62,7 @@
 	top: 5px;
 	left: 5px;
 
-	transition: 0.2s;
+	transition: 0.1s;
 	z-index: -1;
 }
 
@@ -134,12 +133,7 @@ h1 {
 	background-color: white;
 	height: 100px;
 	width: 25px;
-	border-radius: 20px;
-}
-
-.floatingBar a {
-    display: flex;
-    align-items: center;
+	border-radius: 25px;
 }
 
 .floatingBar img {
@@ -193,11 +187,10 @@ h1 {
 .skillsSection {
 	display: flex;
 	flex-direction: row;
+	justify-content: center;
 	align-items: center;
-	justify-content: space-evenly;
 	max-width: 300px;
 	margin: auto;
-
 	margin-top: 100px;
 }
 
@@ -263,7 +256,7 @@ h1 {
 	left: -5px;
 
 	z-index: -1;
-	transition: 0.2s;
+	transition: 0.1s;
 }
 
 .box:hover::after {
@@ -276,6 +269,44 @@ h1 {
 	font-size: var(--font-m);
 	color: var(--my-black);
 	margin-top: 20px;
+}
+
+.scrollUpButton {
+	position: fixed;
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+	border-radius: 100%;
+	background-color: var(--my-black);
+	bottom: 50px;
+	right: 50px;
+	z-index: 1;
+	font-size: var(--font-xl);
+
+	display: flex;
+    align-items: center;
+	justify-content: center;
+}
+
+
+.scrollUpButton::after {
+	content: '^';
+	font-size: 5rem;
+	text-align: center;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: -6px;
+	left: -6px;
+	background-color: var(--my-violet);
+	z-index: -1;
+	border-radius: 100%;
+	transition: 0.1s;
+}
+
+.scrollUpButton:hover::after {
+	top: -2px;
+	left: -2px;
 }
 
 /* BACKGROUND  */
