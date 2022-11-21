@@ -1,13 +1,10 @@
-@media only screen and (min-width: 1200px) {
-    * {
-        /* border: 1px solid black ;  */
-    }
+@media only screen and (min-width: 1000px) {
 
     .bg-black {
         background: url("../img/background/black-laptop-l.svg");
         background-repeat: no-repeat;
 	    background-attachment: fixed;
-        height: 2050px;
+        height: 2070px;
     }
 
     .violet-1 {
@@ -145,7 +142,7 @@
     }
 
     .footerContainer p {
-       margin-top: 130px;
+       margin-top: 180px;
        font-size: var(--font-l);
     }
 

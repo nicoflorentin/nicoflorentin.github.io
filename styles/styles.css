@@ -273,40 +273,14 @@ h1 {
 
 .scrollUpButton {
 	position: fixed;
-	display: inline-block;
-	width: 70px;
-	height: 70px;
-	border-radius: 100%;
-	background-color: var(--my-black);
 	bottom: 50px;
 	right: 50px;
-	z-index: 1;
-	font-size: var(--font-xl);
 
-	display: flex;
-    align-items: center;
-	justify-content: center;
+	display: none;
 }
 
-
-.scrollUpButton::after {
-	content: '^';
-	font-size: 5rem;
-	text-align: center;
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: -6px;
-	left: -6px;
-	background-color: var(--my-violet);
-	z-index: -1;
-	border-radius: 100%;
-	transition: 0.1s;
-}
-
-.scrollUpButton:hover::after {
-	top: -2px;
-	left: -2px;
+.scrollUpButton img {
+	width: 60px;
 }
 
 /* BACKGROUND  */
@@ -338,12 +312,6 @@ h1 {
 
 .violet-1 {
 	top: 110px;
-}
-
-.violet-2 {
-	top: 2000px;
-	height: 1000px;
-	display: none;
 }
 
 header {
