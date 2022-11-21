@@ -1,0 +1,14 @@
+@media only screen and (min-width: 1900px) {
+    .bg-black {
+        background: url("../img/background/black-1080.svg");
+        height: 2130px;
+        width: 100%;
+    
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .bg-violet {
+        height: 1550px;
+    }
+}
