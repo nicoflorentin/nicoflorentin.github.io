@@ -2,10 +2,10 @@ import anime from "../node_modules/animejs/lib/anime.es.js";
 console.log(anime);
 
 const scrollUpButton = document.querySelector(".scrollUpButton");
+const button_img = document.querySelector(".scrollUpButton img");
 
 // responsive script
 let viewport500_match = window.matchMedia("(max-width: 500px)").matches;
-const button_img = document.querySelector(".scrollUpButton img");
 
 if (viewport500_match) {
 	button_img.style.width = "30px";
