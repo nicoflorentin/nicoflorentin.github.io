@@ -1,4 +1,4 @@
-import anime from "/anime.es.js";
+import anime from "/node_modules/animejs/lib/anime.es.js";
 console.log(anime);
 
 const scrollUpButton = document.querySelector(".scrollUpButton");
