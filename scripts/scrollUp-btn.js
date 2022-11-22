@@ -1,6 +1,3 @@
-import { anime } from "/node_modules/animejs/lib/anime.es.js";
-console.log(anime);
-
 const scrollUpButton = document.querySelector(".scrollUpButton");
 const button_img = document.querySelector(".scrollUpButton img");
 
