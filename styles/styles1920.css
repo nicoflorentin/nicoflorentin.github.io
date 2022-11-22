@@ -11,4 +11,12 @@
     .bg-violet {
         height: 1550px;
     }
+
+    .main {
+        max-width: 900px;
+    }
+
+    .main__brief p {
+        margin-right: 20px ;
+    }
 }
