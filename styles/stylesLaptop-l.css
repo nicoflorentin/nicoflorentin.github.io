@@ -11,9 +11,12 @@
     .bg-violet {
         height: 1410px;
     }
-
+    
     .container {
         max-width: 100%;
     }
-
+    
+    .navBar__links li {
+        padding: 1rem 2rem;
+    }
 }

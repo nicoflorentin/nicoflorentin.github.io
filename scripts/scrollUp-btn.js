@@ -4,10 +4,10 @@ const button_img = document.querySelector(".scrollUpButton img");
 // responsive script
 let viewport500_match = window.matchMedia("(max-width: 500px)").matches;
 
-if (viewport500_match) {
-	button_img.style.width = "30px";
-	scrollUpButton.style.right = "20px";
-}
+// if (viewport500_match) {
+// 	button_img.style.width = "30px";
+// 	scrollUpButton.style.right = "20px";
+// }
 
 viewport500_match ? scrollToDisplay = 50 : scrollToDisplay = 300;
 

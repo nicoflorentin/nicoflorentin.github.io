@@ -39,36 +39,34 @@
 
 .navBar__links li {
 	display: inline-block;
-	background-color: var(--my-violet);
 	list-style-type: none;
 	padding: 0.5rem 1rem;
 	margin: 5vh 2vw;
 	font-size: var(--font-m);
 	font-weight: bold;
-	border: 1px solid var(--my-green);
+	color: var(--my-violet);
 	cursor: pointer;
 	position: relative;
-	background-color: var(--my-black);
+	background-color: var(--my-green);
 	z-index: 0;
 }
 
 .navBar__links li::after {
 	content: "";
 	position: absolute;
-
-	background-color: var(--my-violet);
-	width: 100%;
+	background-color: var(--my-black);
 	height: 100%;
-	top: 5px;
-	left: 5px;
+	width: 100%;
+	top: -5px;
+	left: -5px;
 
-	transition: 0.1s;
 	z-index: -1;
+	transition: 0.1s;
 }
 
 .navBar__links li:hover::after {
-	top: 2px;
-	left: 2px;
+	top: 5px;
+	left: 5px;
 }
 
 /* MAIN */
@@ -274,13 +272,13 @@ h1 {
 .scrollUpButton {
 	position: fixed;
 	bottom: 50px;
-	right: 50px;
+	right: 10px;
 
 	display: none;
 }
 
 .scrollUpButton img {
-	width: 60px;
+	width: 30px;
 }
 
 /* BACKGROUND  */
@@ -320,7 +318,7 @@ html {
 }
 
 html::-webkit-scrollbar {
-	width: 14px;
+	width: 10px;
 }
 
 html::-webkit-scrollbar-thumb {

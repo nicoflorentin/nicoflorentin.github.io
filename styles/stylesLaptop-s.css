@@ -145,6 +145,14 @@
         width: 35px;
     }
 
+    .scrollUpButton {
+        right: 50px;
+    }
+
+    .scrollUpButton img {
+        width: 60px;
+    }
+
     .footerContainer p {
        margin-top: 180px;
        font-size: var(--font-l);
