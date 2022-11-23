@@ -22,6 +22,23 @@
     --my-green: #93C572;
 }
 
+.unselectable {
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+  
+	/*
+	  Introduced in IE 10.
+	  See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+	*/
+	-ms-user-select: none;
+	user-select: none;
+ }
+
+ .button {
+	cursor: pointer;
+ }
+
 /* NAVBAR */
 
 .navBar {
@@ -140,13 +157,16 @@ h1 {
 }
 
 /* ABOUT ME  */
+.aboutMe__title {
+	margin-top: 70px;
+}
+
 
 .title, h2 {
 	text-align: center;
 	font-size: var(--font-l);
 	color: var(--my-green);
 	font-weight: bold;
-	margin: 100px 0 5px 0;
 }
 
 .aboutMe__img {

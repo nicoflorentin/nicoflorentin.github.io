@@ -9,7 +9,7 @@ let viewport500_match = window.matchMedia("(max-width: 500px)").matches;
 // 	scrollUpButton.style.right = "20px";
 // }
 
-viewport500_match ? scrollToDisplay = 50 : scrollToDisplay = 300;
+viewport500_match ? scrollToDisplay = 20 : scrollToDisplay = 300;
 
 window.onscroll = function () {
 	if (document.body.scrollTop > scrollToDisplay || document.documentElement.scrollTop > scrollToDisplay) {
