@@ -320,11 +320,16 @@ html {
 }
 
 html::-webkit-scrollbar {
-	width: 10px;
+	width: 14px;
 }
 
 html::-webkit-scrollbar-thumb {
 	background-color: #1C1C1C;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+	background-color: #464646;
+
 }
 
 html::-webkit-scrollbar-track {

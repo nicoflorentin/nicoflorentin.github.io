@@ -9,13 +9,7 @@ if (viewport500_match) {
 	scrollUpButton.style.right = "20px";
 }
 
-// display inherit on scroll
-let scrollToDisplay;
-if (viewport500_match) {
-	scrollToDisplay = 50;
-} else {
-	scrollToDisplay = 300;
-}
+viewport500_match ? scrollToDisplay = 50 : scrollToDisplay = 300;
 
 window.onscroll = function () {
 	if (document.body.scrollTop > scrollToDisplay || document.documentElement.scrollTop > scrollToDisplay) {
