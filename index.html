@@ -27,9 +27,9 @@
 					</span>
 				</h1>
 				<ul class="navBar__links">
-					<li>&lt;AboutMe /&gt;</li>
-					<li>&lt;Skills /&gt;</li>
-					<li>&lt;Projects /&gt;</li>
+					<li id="aboutMe-btn">&lt;AboutMe /&gt;</li>
+					<li id="skills-btn">&lt;Skills /&gt;</li>
+					<li id="projects-btn">&lt;Projects /&gt;</li>
 				</ul>
 			</div>
 			<section class="main">
@@ -48,30 +48,33 @@
 					</div>
 				</div>
 			</section>
-			<h2 class="aboutMe__title title">&lt;AboutMe /&gt;</h2>
-			<section class="aboutMeSection">
-				<img
-					class="aboutMe__img"
-					src="./img/me-circle.svg"
-					alt="me-developing"
-				/>
-				<div class="aboutMeContainer">
-					<div class="aboutMe__descriptionContainer">
-						<div class="aboutMe__description">
-							<p>
-								&lt;p&gt;<br />
-								A web developer specialized in Front-End 🎨💻, I
-								use Figma to digitalize my projects and then
-								writing the required code so it is perfectly
-								interpreted by the browser 🧠🚀. I'm also very
-								passionate about CSS and all the potential it
-								offers when works with JS together 💪
-								<br />&lt;/p&gt;
-							</p>
+			<section id="aboutMe">
+				<h2 class="aboutMe__title title">&lt;AboutMe /&gt;</h2>
+				<div class="aboutMeSection">
+					<img
+						class="aboutMe__img"
+						src="./img/catPC.gif"
+						alt="me-developing"
+					/>
+					<div class="aboutMeContainer">
+						<div class="aboutMe__descriptionContainer">
+							<div class="aboutMe__description">
+								<p>
+									&lt;p&gt;<br />
+									A web developer specialized in Front-End 🎨💻, I
+									use Figma to digitalize my projects and then
+									writing the required code so it is perfectly
+									interpreted by the browser 🧠🚀. I'm also very
+									passionate about CSS and all the potential it
+									offers when works with JS together 💪
+									<br />&lt;/p&gt;
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
 			</section>
+			
 			<section class="skillsSection">
 				<div class="skillsContainer">
 					<h2 class="skills__title title">&lt;Skills /&gt;</h2>
@@ -113,7 +116,7 @@
 						</div>
 					</div>
 				</div>
-				<img class="skills__img" src="./img/me.svg" alt="me-skills" />
+				<img class="skills__img" src="./img/hobbes-mouse.gif" alt="me-skills" />
 			</section>
 		</div>
 		<aside class="floatingBar">
@@ -135,7 +138,9 @@
 			<p>Nicolás Florentín - Buenos Aires - 2022</p>
 		</footer>
 	</body>
+	<script src="./scripts/script.js" ></script>
 	<script src="./scripts/anime.min.js" ></script>
-	<script src="./scripts/scrollUp-btn.js" ></script>
+	<script src="./scripts/scroll-btn.js" ></script>
+	<script src="./scripts/scroll-animations.js" ></script>
 	<script src="./scripts/text-carr.js"></script>
 </html>

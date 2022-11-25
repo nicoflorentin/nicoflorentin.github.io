@@ -66,16 +66,8 @@
         margin: 100px 0 40px 0;
     }
 
-    .aboutMeSection {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
     .aboutMe__img {
-        height: 300px;
         display: inherit;
-        margin-right: 10vw;
     }
 
     .aboutMe__descriptionContainer {
@@ -102,7 +94,6 @@
     .skills__img {
         display: inherit;
         height: 300px;
-        margin-left: 15vw;
     }
 
     .skills__title {
