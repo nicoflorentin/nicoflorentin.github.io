@@ -5,10 +5,6 @@
 	/* border: 1px solid red; */
 }
 
-html {
-	scroll-behavior: smooth;
-}
-
 :root {
     font-size: 62.5%;
 	
@@ -210,6 +206,20 @@ h1 {
 
 .aboutMe__description p {
 	max-width: 216px;
+}
+
+.socialContainer {
+	padding: 5px 5px 0px 5px;
+	background-color: var(--my-violet);
+	/* border: 1px solid black; */
+	font-size: var(--font-m);
+}
+
+.social__footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 15px 5px
 }
 
 /* SKILLS */
