@@ -1,9 +1,9 @@
 const aboutMeSection = document.querySelector('#aboutMe');
 const skillsSection = document.querySelector('.skillsSection');
-const aboutMe_left = document.querySelector('.aboutMe__img')
+const aboutMe_left = document.querySelector('#aboutLeft')
 const aboutMe_right = document.querySelector('.aboutMeContainer')
 const skills_left = document.querySelector('.skillsContainer')
-const skills_right = document.querySelector('.skills__img')
+const skills_right = document.querySelector('#skillsRight')
 
 aboutMe_left.style.transform = 'translatex(-100px) translatey(100px)';
 aboutMe_left.style.opacity = '0';
