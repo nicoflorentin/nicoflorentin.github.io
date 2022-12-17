@@ -123,13 +123,6 @@ h1 {
 	margin-right: 10px;
 }
 
-.main__profilePic img {
-	display: flex;
-	width: 114px;
-	margin: auto;
-	z-index: 1;
-}
-
 .profilePic {
     position: relative;
 }
@@ -179,7 +172,6 @@ h1 {
 
 .aboutMe__img {
 	height: 300px;
-    display: none;
 }
 
 .aboutMe__descriptionContainer {
@@ -209,17 +201,36 @@ h1 {
 }
 
 .socialContainer {
-	padding: 5px 5px 0px 5px;
+	padding: 25px 25px 0px 25px;
 	background-color: var(--my-violet);
 	/* border: 1px solid black; */
+	display: none;
+}
+
+.socialText {
 	font-size: var(--font-m);
+}
+
+.social--nobg {
+	background-color: inherit;
 }
 
 .social__footer {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 15px 5px
+	padding: 20px 5px
+}
+
+#likeContainer {
+	display: flex;
+	align-items: center;
+}
+
+.heart {
+	background-color: inherit;
+	border: 0;
+	margin-left: 1.5rem;
 }
 
 /* SKILLS */
@@ -387,3 +398,7 @@ header {
 	position: fixed;
 	z-index: 10;
 }
+
+img {
+	pointer-events: none
+  }
