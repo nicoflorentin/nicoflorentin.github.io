@@ -70,6 +70,10 @@
         display: initial;
     }
 
+    .social__footer {
+        padding: 20px 5px;
+    }
+
     .aboutMeSection {
         padding: 0;
     }
