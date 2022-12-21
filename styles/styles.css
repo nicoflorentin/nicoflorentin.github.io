@@ -129,6 +129,10 @@ h1 {
 	width: 150px;
 }
 
+.counterText {
+	font-size: var(--font-s);
+}
+
 
 /* FIXED ASIDE BAR */
 
@@ -235,7 +239,7 @@ h1 {
 .heart {
 	background-color: inherit;
 	border: 0;
-	margin-left: 1.5rem;
+	margin-left: 0.9rem;
 }
 
 /* SKILLS */
