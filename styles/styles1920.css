@@ -1,9 +1,8 @@
 @media only screen and (min-width: 1900px) {
     .bg-black {
         background: url("../img/background/black-1080.svg");
-        height: 2410px;
+        height: 2490px;
         width: 100%;
-    
         background-repeat: no-repeat;
         background-attachment: fixed;
     }
@@ -13,7 +12,7 @@
     }
 
     .aboutMe__title {
-        margin-top: 280px;
+        padding-top: 200px;
     }
 
     .main {

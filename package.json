@@ -1,0 +1,22 @@
+{
+  "name": "vanilla-portfolio",
+  "version": "1.0.0",
+  "description": "<img alt=\"app-gif-demo\" src=\"https://user-images.githubusercontent.com/81888574/197868779-a63690c1-ae93-42e8-a886-9aef8eed6f2f.png\">",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicoflorentin/nicoflorentin.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicoflorentin/nicoflorentin.github.io/issues"
+  },
+  "homepage": "https://github.com/nicoflorentin/nicoflorentin.github.io#readme",
+  "dependencies": {
+    "scroll-js": "^3.5.2"
+  }
+}

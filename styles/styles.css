@@ -157,6 +157,14 @@ h1 {
 	width: 20px;
 }
 
+.floatingBar img:hover {
+	color: var(--my-black);
+	width: 20px;
+	scale: 2;
+}
+
+
+
 /* ABOUT ME  */
 
 .aboutMeSection {
@@ -408,6 +416,6 @@ header {
 	z-index: 10;
 }
 
-img {
+/* img {
 	pointer-events: none
-  }
+} */

@@ -45,7 +45,7 @@
 					</p>
 				</div>
 				<div class="main__profilePic">
-					<img class="profilePic" src="./img/profile_pic.png" alt="profile_pic" />
+					<img id="profilePicture" class="profilePic" src="./img/profile_pic.png" alt="profile_pic" />
 					<div class="social__footer socialText">
 						<p>profile.png</p>
 						<div id="likeContainer">
@@ -60,7 +60,7 @@
 			<h2 class="aboutMe__title title">&lt;AboutMe /&gt;</h2>
 			<div class="aboutMeSection">
 				<div id='aboutLeft' class="socialContainer">
-					<img class="aboutMe__img" src="./img/catPC.gif" alt="me-developing" />
+					<img id="cat1" class="aboutMe__img" src="./img/catPC.gif" alt="me-developing" />
 					<div class="social__footer socialText">
 						<p>dev_cat.png</p>
 						<div id="likeContainer">
@@ -90,7 +90,7 @@
 			</div>
 		</section>
 
-		<section class="skillsSection">
+		<section id='skills' class="skillsSection">
 			<div class="skillsContainer">
 				<h2 class="skills__title title">&lt;Skills /&gt;</h2>
 				<div class="skills__boxContainer">
@@ -126,10 +126,14 @@
 						<img src="./icons/bootstrap.svg" alt="bootstrap" />
 						<p>Bootstrap</p>
 					</div>
+					<div class="box">
+						<img src="./icons/firebase.svg" alt="firebase" />
+						<p>Firebase</p>
+					</div>
 				</div>
 			</div>
 			<div id='skillsRight' class="socialContainer">
-				<img class="skills__img" src="./img/hobbes-mouse.gif" alt="me-skills" />
+				<img id="cat2" class="skills__img" src="./img/hobbes-mouse.gif" alt="me-skills" />
 				<div class="social__footer socialText">
 					<p>cat_playing.png</p>
 					<div id="likeContainer">
@@ -141,7 +145,7 @@
 			</div>
 		</section>
 	</div>
-	<aside class="floatingBar">
+	<aside id='floatingBar' class="floatingBar">
 		<a href="mailto:nicogrunger@hotmail.com"><img src="./icons/mail-100.svg" alt="mailIcon" /></a>
 		<a href="https://www.linkedin.com/in/nicol%C3%A1s-florent%C3%ADn-a3771217a/"><img src="./icons/linkedin-100.svg"
 				alt="linkedinIcon" /></a>
@@ -159,7 +163,7 @@
 <!-- toast script -->
 <script src="https://cdn.jsdelivr.net/npm/siiimple-toast/dist/siiimple-toast.min.js"></script>
 <script src="./scripts/toast.js"></script>
-<!-- animation script -->
+<!-- animate js script -->
 <script src="./scripts/anime.min.js"></script>
 <!-- typewritter script -->
 <script src="./scripts/text-carr.js"></script>
@@ -167,5 +171,6 @@
 <script src="./scripts/script.js"></script>
 <script src="./scripts/scroll-btn.js"></script>
 <script src="./scripts/scroll-animations.js"></script>
+<script type='module' src="./scripts/navBar-scroll.js"></script>
 
 </html>

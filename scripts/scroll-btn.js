@@ -28,7 +28,3 @@ scrollUpButton.addEventListener("click", () => {
 	}, scrollUpDelay);
 });
 
-aboutMeButton.addEventListener("click", () => {
-	const about = document.querySelector('#aboutMe').getBoundingClientRect()
-	console.log(about)
-})

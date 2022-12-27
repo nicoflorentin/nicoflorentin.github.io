@@ -31,7 +31,8 @@ const buttons = [
 		name: "Profile",
 		btn_id: "profileBtn",
 		counter_id: "profileCounter",
-		img_id: "profileImg",
+		heart_id: "profileImg",
+		picture_id: 'profilePicture',
 		collection: "profile",
 		liked: false,
 	},
@@ -39,7 +40,8 @@ const buttons = [
 		name: "About me",
 		btn_id: "aboutBtn",
 		counter_id: "aboutCounter",
-		img_id: "aboutImg",
+		heart_id: "aboutImg",
+		picture_id: 'cat1',
 		collection: "about",
 		liked: false,
 	},
@@ -47,7 +49,8 @@ const buttons = [
 		name: "Skills",
 		btn_id: "skillsBtn",
 		counter_id: "skillsCounter",
-		img_id: "skillsImg",
+		heart_id: "skillsImg",
+		picture_id: 'cat2',
 		collection: "skills",
 		liked: false,
 	},
@@ -59,21 +62,27 @@ const updateIcon = (params) => {
 	params.liked = loadedState;
 	console.log("loaded state", loadedState);
 	if (loadedState) {
-		document.getElementById(params.img_id).src = "./img/heart-red.svg";
+		document.getElementById(params.heart_id).src = "./img/heart-red.svg";
 	} else {
-		document.getElementById(params.img_id).src = "./img/heart.svg";
+		document.getElementById(params.heart_id).src = "./img/heart.svg";
 	}
 };
 
 // iterates the node information array
 buttons.forEach((params) => {
 	let button = document.getElementById(params.btn_id);
-	let image = document.getElementById(params.img_id);
+	let image = document.getElementById(params.heart_id);
 	let counter = document.getElementById(params.counter_id);
 
-	// button listener
+	// button and image listener
 	const postBtn = document.getElementById(params.btn_id);
 	postBtn.addEventListener("click", () => {
+		postData();
+	});
+	
+	const postPicture = document.getElementById(params.picture_id);
+	postPicture.addEventListener("dblclick", () => {
+		console.log('doubled!')
 		postData();
 	});
 
@@ -118,20 +127,20 @@ buttons.forEach((params) => {
 	};
 });
 
-document.getElementById("reset").addEventListener("click", () => {
-	const likesRef = doc(db, "likes-counter", "likes");
-	buttons.forEach((el) => {
-		let img = document.getElementById(el.img_id);
-		let button = document.getElementById(el.btn_id);
+// document.getElementById("reset").addEventListener("click", () => {
+// 	const likesRef = doc(db, "likes-counter", "likes");
+// 	buttons.forEach((el) => {
+// 		let img = document.getElementById(el.heart_id);
+// 		let button = document.getElementById(el.btn_id);
 
-		updateDoc(likesRef, {
-			[el.collection]: 0,
-		}).then(() => {
-			img.src = "./img/heart.svg";
-			el.liked = false;
-			localStorage.setItem(el.collection, el.liked);
-			console.log(`${el.collection} reset to zero`);
-			button.disabled = false;
-		});
-	});
-});
+// 		updateDoc(likesRef, {
+// 			[el.collection]: 0,
+// 		}).then(() => {
+// 			img.src = "./img/heart.svg";
+// 			el.liked = false;
+// 			localStorage.setItem(el.collection, el.liked);
+// 			console.log(`${el.collection} reset to zero`);
+// 			button.disabled = false;
+// 		});
+// 	});
+// });
