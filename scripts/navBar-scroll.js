@@ -1,4 +1,4 @@
-import { scrollIntoView } from './scroll.min.js'
+import { scrollIntoView } from 'scroll-js';
 
 const aboutmeButton = document.getElementById('aboutMe-btn')
 const aboutMeDiv = document.getElementById('aboutMe')
