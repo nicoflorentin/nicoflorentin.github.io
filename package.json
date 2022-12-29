@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "animejs": "^3.2.1",
+    "gh-pages": "^4.0.0",
     "scroll-js": "^3.5.2"
   }
 }
