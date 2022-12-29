@@ -1,0 +1,38 @@
+NavBar
+	con el hover el boton cambia de color
+	cuando haces click se dispara una animación de apretar botón
+
+Espacio con el nombre y el oficio
+	las letras aparecen con el scroll						+
+	efecto al hacer click en la imagen, algo de movimiento
+
+Datos de contacto
+	mail										+
+	github										+
+	linkedin									+
+
+AboutMe
+	del lado izquierdo hacer un fade in de una imagen durante el scroll
+	hacerle un botón de like al gatito
+
+Musica de fondo
+	Arriba a la derecha botón on/off
+	
+Paleta de colores
+	negro
+	violeta
+	verde
+
+Logo
+	Crear logo svg
+
+Boton de likes
+	pide Nombre y guarda la cantidad y el nombre en firebase
+	marquesina que se desplaza en blanco con los nombres que dieron like
+	el nombre se desplaza por lo negro hasta que se esconde atras del violeta
+
+Pie de página
+	información del que programo la pagina
+	fecha, año
+	poner un botón para subir al top de la página
+
