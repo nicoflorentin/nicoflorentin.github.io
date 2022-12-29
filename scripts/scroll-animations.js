@@ -1,3 +1,5 @@
+import anime from 'animejs/lib/anime.es.js';
+
 const aboutMeSection = document.querySelector('#aboutMe');
 const skillsSection = document.querySelector('.skillsSection');
 const aboutMe_left = document.querySelector('#aboutLeft')

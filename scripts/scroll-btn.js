@@ -1,5 +1,8 @@
+import anime from 'animejs/lib/anime.es.js';
+
 const scrollUpButton = document.querySelector('.scrollUpButton');
 const aboutMeButton = document.querySelector('#aboutMe-btn')
+let scrollToDisplay = 0
 
 // responsive script
 let viewport500_match = window.matchMedia("(max-width: 500px)").matches;
