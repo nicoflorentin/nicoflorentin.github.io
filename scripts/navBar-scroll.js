@@ -15,6 +15,5 @@ skillsButton.addEventListener('click', () => {
     scrollIntoView(skillsDiv, document.body, {
         duration: 1000,
         easing: 'ease-in',
-        top: '2000px'
     })
 })
